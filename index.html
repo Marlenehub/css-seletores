@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício CSS Seletores</title>
+    <style>
+        /* 1. Estilizar links */
+        a {
+            color: red;
+        }
+
+        a:hover {
+            color: lemon;
+        }
+
+        /* 2. Parágrafos em geral com Arial */
+        p {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Parágrafos logo após h1 em negrito */
+        h1 + p {
+            font-weight: bold;
+        }
+
+        /* 3. Classe destaque */
+        .destaque {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Parágrafo dentro da classe destaque em negrito */
+        .destaque p {
+            font-weight: bold;
+        }
+
+        /* strong dentro da classe destaque em vermelho */
+        .destaque strong {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Links de Exemplo</h1>
+    <a href="#">Link 1</a> |
+    <a href="#">Link 2</a>
+
+    <h1>Parágrafos</h1>
+    <p>Este parágrafo vem logo após um h1 e ficará em negrito.</p>
+    <p>Outro parágrafo com fonte Arial.</p>
+
+    <div class="destaque">
+        <p>Este parágrafo está na classe destaque e ficará em negrito.</p>
+        <p>Texto com <strong>destaque forte</strong>.</p>
+    </div>
+
+</body>
+</html>
