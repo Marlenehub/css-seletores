@@ -1,0 +1,28 @@
+/* 1. Cores dos links */
+a {
+    color: red;
+}
+
+a:hover {
+    color: lime;
+}
+
+/* 2. Personalização dos parágrafos */
+p {
+    font-family: Arial, sans-serif;
+}
+
+/* Parágrafo logo após um h1 */
+h1 + p {
+    font-weight: bold;
+}
+
+/* 3. Estilização da classe .destaque */
+.destaque {
+    font-family: Arial, sans-serif;
+}
+
+.destaque strong {
+    font-weight: bold;
+    color: red;
+}
